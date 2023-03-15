@@ -13,8 +13,6 @@ body {
 }
 
 /* <!-- -------------header and nav bar---------------- --> */
-
-
 #header {
   width: 100%;
   height: 100vh;
@@ -42,7 +40,10 @@ nav {
 nav.scrolled {
     background-color: black;
   }
-  
+#running-text{
+    margin-bottom: 50px;
+}
+ 
 .logo {
   width: 100px;
 }
@@ -71,9 +72,13 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .header-text{
-    margin-top: 30%;
+    margin-top: 20%;
     font-size: 30px;
 
+}
+.typing-text{
+    color: #ff004f;
+    font-weight: bold;
 }
 .header-text h1{
     font-size: 60px;
@@ -264,7 +269,7 @@ padding: 55px 0;
     margin-top: 50px;
 }
 .project-list>div{
-    width: 100%;
+  width: 100%;
   background: #262626;
   padding: 15px 10px;
   font-size: 13px;
@@ -275,7 +280,6 @@ padding: 55px 0;
 }
 .project-list div img{
     width: 100%;
-    /* height: 70px; */
     margin-bottom:10px;
 }
 .project-list>div:hover{
@@ -284,21 +288,23 @@ padding: 55px 0;
 }
 .project-list div h1{
     text-align: center;
-    color: #ababab;
+    color: #0098e4;
     margin: 10px;
 }
 .project-list div p{
     margin-bottom: 5px;
-    margin-left: 5%;
+    margin-left: 1%;
 }
+
 .project-list div p span{
-    color:#04ff00;
+    color:#26c9b9;
     font-size: 18px;
 }
 .key-features{
     margin: auto;
     width: 92%;
-    margin-left: 6%;
+    margin-left: 5%;
+    margin-bottom: 10px;
 }
 .projectlinks{
     width: 90%;
@@ -312,9 +318,9 @@ padding: 55px 0;
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    color: white;
+    color: #127fb6;
     margin: 10px 0;
-    
+    font-weight:bolder;
 }
 .projectlinks a:hover{
     cursor: pointer;
@@ -365,7 +371,7 @@ padding: 55px 0;
 .btn:hover{
     cursor: pointer;
     color:#ff004f;
-    background-color: #bf920b;
+    background-color: #fdc417;
 }
 .contact-right form{
     width: 100%;
@@ -459,6 +465,7 @@ nav .fas{
 
 @media only screen and (max-width:600px){
     #header{
+        width: 610px;
         background-image: url("../images/phone.png");
     }
     .header-text{
@@ -528,12 +535,23 @@ nav .fas{
         flex-basis: 100%;
     }
     .container{
-        width:600px;
+        width:610px;
     }
     .copyright{
         width:610px;
        
     }
+    .js-calendar-graph{
+        display: none;
+    }
+    #calender_cont{
+        padding: 10 10%;
+        width: 100%;
+        background: linear-gradient(to right, #030962, transparent);
+        margin: 30px 0px;
+        height: 150px;
+        overflow: hidden;
+     }
 }
 
 @media only screen and (max-width:415px){
@@ -547,6 +565,9 @@ nav .fas{
     .container{
         width: 400px;
     } 
+    #header{
+        width: 400px;
+    }
     .services-list{
         grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     }
@@ -557,6 +578,9 @@ nav .fas{
         margin-top: 50px;
         width: 100%;
     }
+    .js-calendar-graph{
+        display: none;
+    }
 }
 
 
@@ -565,4 +589,90 @@ nav .fas{
     color: #61b752;
     margin-top: 10px;
     display: block;
+}
+
+#ddd{
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+   
+#contri{
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contri>div{
+    width: 48%;
+}
+#contri>div>img{
+    width: 100%;
+}
+
+ #contri2{
+    width: 100%;
+ }
+ #contri2>img{
+    width: 50%;
+ }
+ #calender_cont{
+    padding: 10 10%;
+    width: 100%;
+    background: linear-gradient(to right, #030962, transparent);
+    margin: 30px 0px;
+ } 
+ .text-muted,.float-right{
+    color:rgb(254, 254, 255);
+    font-size: 16px;
+}
+.commit-graph-container .js-calendar-graph-svg{
+    max-width: 100%;
+    height: auto;
+  }
+.js-calendar-graph text.ContributionCalendar-label{
+    font-size: 16px;
+    margin: 5px;
+    color: #ff004f;
+}
+.contrib-column .contrib-number{
+    font-size: 20px;
+    color: #ff004f;
+}
+.js-calendar-graph,.contrib-column {
+    padding: 10px;
+   
+}
+
+@media screen and (max-width: 600px) {
+    #contri>div {
+        width: 100%;
+    }
+    #contri{
+        width: 100%;
+    }
+    #contri2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .js-calendar-graph{
+        transform: scale(0.8);
+        position: relative;
+        left: -70px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .js-calendar-graph{
+        transform: scale(0.6);
+        position: relative;
+        left: -70px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .js-calendar-graph{
+        transform: scale(0.4);
+        position: relative;
+        left: -70px;
+    }
 }

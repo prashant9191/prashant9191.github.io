@@ -39,3 +39,13 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab")
 }
 
+
+
+var typed = new Typed(".typing-text", {
+  strings: ["Back-End Development", "Front-End Development","Database Management","API Development"],
+  loop: true,
+  typeSpeed: 50,
+  backSpeed: 25,
+  backDelay: 500,
+});
+
