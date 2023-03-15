@@ -474,6 +474,10 @@ nav .fas{
     #header{
         background-image: url("../images/newmid_size-transformed.png");
     }
+    .header-text{
+        margin-top: 50%;
+        font-size: 26px;
+    }
 }
 @media screen and (max-width: 860px) {
     .js-calendar-graph{
@@ -482,13 +486,14 @@ nav .fas{
         left: -70px;
     }
 }
-@media screen and (max-width:820px){
+@media screen and (max-width:830px){
     #header{
         background-image: url("../images/smallscreenpic2.png");
     }
     .header-text{
         font-size: 16px;
-        margin-top: 50%;
+        margin-top: 60%;
+        
     }
     .header-text h1{
         font-size: 40px;
@@ -579,10 +584,10 @@ nav .fas{
     }
     .header-text{
         margin-top: 100%;
-        font-size: 16px;
+        font-size: 26px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 40px;
     }
     nav .fas{
         display: block;
@@ -670,29 +675,12 @@ nav .fas{
     }
 }
 @media screen and (max-width:415px){
-    .copyright{
-        width:430px;
-        
-    }
-    /* #nav-menu{
-
-    } */
-    .header-text{
-        margin-top: 150%;
-        font-size: 20px;
-    }
     .contact-left,.contact-right{
         flex-basis: 100%;
     }
     
     .logo{
         width: 200px;
-    }
-    .container{  
-        width: 410px;
-    } 
-    #header{
-        width: 400px;
     }
     .services-list{
         grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
