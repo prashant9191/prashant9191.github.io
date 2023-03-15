@@ -18,20 +18,20 @@
       <nav id="nav-menu">
         <img src="./images/logo_port-transformed.png" class="logo" />
         <ul id="sidemenu">
-          <li><a href="#header" id="home">Home</a></li>
-          <li><a href="#About" id="about" class="about">About</a></li>
+          <li><a href="#header" class="nav-link home" >Home</a></li>
+          <li><a href="#about" class="nav-link about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#Skills" id="skills">Skills</a></li>
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#Projects" id="projects">Projects</a></li>
-          <li><a href="#Contact" id="contact">Contact </a></li>
-          <li><a href="./images/Prashant_Verma_Resume.pdf" target="_blank" download class="resume_btan">Resume</a></li>
+          <li><a href="#skills"  class="nav-link skills">Skills</a></li>
+          <li><a href="#tools" >Tools</a></li>
+          <li><a href="#projects" class="nav-link projects">Projects</a></li>
+          <li><a href="#contact" class="nav-link contact">Contact </a></li>
+          <li><a href="./images/Prashant_Verma_Resume.pdf" target="_blank" download class="resume_btan nav-link resume">Resume</a></li>
           <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
         <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
-      <div class="header-text">
-        <h1 id="header_btn_below">Hi,<br> I'm <span>Prashant Verma</span><br />From <span id="in_text">In</span>d<span
+      <div class="header-text" id="home">
+        <h1 id="user-detail-name">Hi,<br> I'm <span>Prashant Verma</span><br />From <span id="in_text">In</span>d<span
             id="d_text">ia</span></h1>
         <p id="running-text">I'm Into <span class="typing-text"></span></p>
         <a href="./images/Prashant_Verma_Resume.pdf" download target="_blank" class="btn resume_btan">Resume</a>
@@ -41,15 +41,15 @@
   </div>
 
   <!-- -------------about---------------- -->
-  <div id="About">
+  <div id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="./images/photo.jpg" alt="" />
+          <img class="home-img" src="./images/photo.jpg" alt="" />
         </div>
-        <div class="about-col-2">
+        <div class="about-col-2 about section" id="about">
           <h1 class="sub-title">About Me</h1>
-          <p>
+          <p id="user-detail-intro">
             Passionate full-stack developer with robust design and
             problem-solving skills. A highly disciplined and motivated person
             having proficiency in a wide range of front-end and back-end
@@ -185,7 +185,7 @@
     </div>
   </div>
   <!-- ---------------Skills------------------ -->
-  <div id="Skills">
+  <div id="skills">
     <div class="container">
       <h1 class="sub-title">Skills</h1>
       <div class="skills-list">
@@ -261,16 +261,16 @@
     </div>
   </div>
   <!-- ---------------Projects------------------ -->
-  <div id="Projects">
+  <div id="projects">
     <div class="container">
       <h1 class="sub-title">Projects</h1>
       <div class="project-list">
-        <div>
+        <div class="project-card">
           <img src="./images/citysass-home.png" alt="">
-          <h1>CitySass:</h1>
-          <p>Fashion ecommerce website, Our platform is designed to provide an exceptional online shopping experience
+          <h1 class="project-title">CitySass:</h1>
+          <p class="project-description">Fashion ecommerce website, Our platform is designed to provide an exceptional online shopping experience
             for fashion lovers all around the world.</p>
-          <p><span>Tech Stacks Used:</span> Html || Css || JavaScript || NodeJS || MongoDB || Mongoose || Express || jwt
+          <p class="project-tech-stack"><span>Tech Stacks Used:</span> Html || Css || JavaScript || NodeJS || MongoDB || Mongoose || Express || jwt
             Authentication </p>
           <p><span>Key Features:</span></p>
           <div class="key-features">
@@ -291,12 +291,12 @@
               class="project-deployed-link">Deployed</a>
           </div>
         </div>
-        <div>
+        <div class="project-card">
           <img src="./images/lenskart clone.png" alt="">
-          <h1>EyeCare:</h1>
-          <p>Lensekart Clone Website, Our platform is designed to provide designer glasses at lower cost all around the
+          <h1 class="project-title">EyeCare:</h1>
+          <p class="project-description">Lensekart Clone Website, Our platform is designed to provide designer glasses at lower cost all around the
             world.</p>
-          <p><span>Tech Stacks Used:</span> Html || Css || JavaScript</p>
+          <p class="project-tech-stack"><span>Tech Stacks Used:</span> Html || Css || JavaScript</p>
           <p><span>Key Features:</span></p>
           <div class="key-features">
             <ul>
@@ -312,15 +312,15 @@
           <div class="projectlinks">
             <a target="_blank" href="https://github.com/prashant9191/Lensekart-Clone"
               class="project-github-link">Github</a>
-            <a target="_blank" href="https://eyecare.vercel.app/">Deployed</a>
+            <a class="project-deployed-link" target="_blank" href="https://eyecare.vercel.app/">Deployed</a>
           </div>
         </div>
-        <div>
+        <div class="project-card">
           <img src="./images/intern Theory.png" alt="">
-          <h1>InternTheory:</h1>
-          <p>InternShip and Courses Website, Our platform is designed To connect employers to young talent all over
+          <h1 class="project-title">InternTheory:</h1>
+          <p class="project-description">InternShip and Courses Website, Our platform is designed To connect employers to young talent all over
             India.</p>
-          <p><span>Tech Stacks Used:</span> Html || Css || JavaScript</p>
+          <p class="project-tech-stack"><span>Tech Stacks Used:</span> Html || Css || JavaScript</p>
           <p><span>Key Features:</span></p>
           <div class="key-features">
             <ul>
@@ -335,15 +335,15 @@
           <div class="projectlinks">
             <a target="_blank" href="https://github.com/prashant9191/Intern-Theory-Clone"
               class="project-github-link">Github</a>
-            <a target="_blank" href="https://famous-chebakia-bf6abc.netlify.app/">Deployed</a>
+            <a class="project-deployed-link" target="_blank" href="https://famous-chebakia-bf6abc.netlify.app/">Deployed</a>
           </div>
         </div>
-        <div>
+        <div class="project-card">
           <img src="./images/masai_vaccine_app.png" alt="">
-          <h1>Masai Vaccination App:</h1>
-          <p>Fashion ecommerce website, Our platform is designed to provide an exceptional online shopping experience
+          <h1 class="project-title">Masai Vaccination App:</h1>
+          <p class="project-description">Fashion ecommerce website, Our platform is designed to provide an exceptional online shopping experience
             for fashion lovers all around the world.</p>
-          <p><span>Tech Stacks Used:</span> Html || Css || JavaScript </p>
+          <p class="project-tech-stack"><span>Tech Stacks Used:</span> Html || Css || JavaScript </p>
           <p><span>Key Features:</span></p>
           <div class="key-features">
             <ul>
@@ -356,7 +356,7 @@
           <div class="projectlinks">
             <a target="_blank" href="https://github.com/prashant9191/Masai-Vaccination-WebApp"
               class="project-github-link">Github</a>
-            <a target="_blank" href="https://splendorous-basbousa-e84846.netlify.app/">Deployed</a>
+            <a class="project-deployed-link" target="_blank" href="https://splendorous-basbousa-e84846.netlify.app/">Deployed</a>
           </div>
         </div>
       </div>
@@ -411,18 +411,19 @@
   </div>
   <!-- ---------------Contacts------------------ -->
 
-  <div id="Contact">
+  <div id="contact">
     <div class="container">
       <div class="row">
         <div class="contact-left">
           <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fas fa-paper-plane"></i>talkprashant@gmail.com</p>
-          <p><i class="fas fa-phone"></i></i></i>+91 93056033194</p>
+          <p id="contact-email"><i class="fas fa-paper-plane"></i>talkprashant@gmail.com</p>
+          <p id="contact-phone"><i class="fas fa-phone"></i></i></i>+91 93056033194</p>
           <div class="social-icons">
-            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/prashant-verma-b44738178/" id="contact-linkedin"><i class="fab fa-linkedin"></i></a>
             <a href=""><i class="fab fa-instagram"></i></i></a>
             <a href=""><i class="fab fa-facebook"></i></a>
             <a href=""><i class="fab fa-twitter"></i></i></a>
+            <a href="https://github.com/prashant9191" id="contact-github"><i class="fab fa-github"></i></i></a>
           </div>
           <a href="./images/Prashant_Verma_Resume.pdf" download target="_blank" class="btn resume_btan">Downlode CV</a>
         </div>

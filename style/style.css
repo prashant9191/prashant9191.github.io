@@ -489,7 +489,7 @@ nav .fas {
   }
   .header-text {
     font-size: 16px;
-    margin-top: 75%;
+    margin-top: 65%;
   }
   .header-text h1 {
     font-size: 40px;
@@ -577,9 +577,7 @@ nav .fas {
 }
 @media screen and (max-width: 600px) { 
   #header{
-    /* border: 2px solid teal; */
     width: max-content;
-    /* height: 1000px; */
   }
   .header-text {
     font-size: 26px;
@@ -666,26 +664,12 @@ nav .fas {
     overflow: hidden;
   }
 }
-@media screen and (max-width: 530px) { 
-  #header{
-    /* border: 2px solid teal; */
-    /* width: max-content; */
-    /* height: 1100px; */
-  }
-}
-@media screen and (max-width: 440px) { 
-  #header{
-    /* border: 2px solid teal; */
-    /* width: max-content; */
-    /* height: 1350px; */
-  }
-}
 @media screen and (max-width: 420px) {
   #ddd {
     font-size: 30px;
   }
   .header-text {
-    margin-top: 100%;
+    margin-top: 70%;
   }
 }
 @media screen and (max-width: 415px) {
@@ -693,9 +677,8 @@ nav .fas {
   .contact-right {
     flex-basis: 100%;
   }
-
   .logo {
-    width: 200px;
+    width: 180px;
   }
   .services-list {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
