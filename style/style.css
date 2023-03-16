@@ -96,7 +96,6 @@ nav ul li a:hover::after {
 }
 /* ---------------------------------about----------------------------- */
 #about {
-  padding: 80px 0px;
   color: #ababab;
 }
 .row {
@@ -108,6 +107,8 @@ nav ul li a:hover::after {
 .about-col-1 {
   flex-basis: 35%;
   margin-top: 15px;
+  padding: 80px 0px;
+
 }
 .about-col-1 img {
   width: 100%;
@@ -116,6 +117,7 @@ nav ul li a:hover::after {
 .about-col-2 {
   flex-basis: 60%;
   font-size: 16px;
+  padding: 80px 0px;
 }
 .sub-title {
   font-size: 60px;
@@ -520,9 +522,7 @@ nav .fas {
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
-  }
-  #about {
-    padding: 30px 0;
+    padding: 20px 0 0 0;
   }
   #services {
     padding: 30px 0px;
