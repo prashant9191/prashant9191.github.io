@@ -95,7 +95,7 @@ nav ul li a:hover::after {
   color: #43a047;
 }
 /* ---------------------------------about----------------------------- */
-#About {
+#about {
   padding: 80px 0px;
   color: #ababab;
 }
@@ -166,7 +166,7 @@ nav ul li a:hover::after {
 /* <!-- ---------------services------------------ --> */
 
 #services {
-  padding: 55px 0;
+  padding: 65px 0;
 }
 .services-list {
   display: grid;
@@ -196,7 +196,7 @@ nav ul li a:hover::after {
   transform: scale3d(1.03, 1.03, 1.03);
 }
 /* <!-- ---------------SKILLS------------------ --> */
-#Skills {
+#skills {
   padding: 70px 0;
 }
 
@@ -254,7 +254,7 @@ nav ul li a:hover::after {
 }
 
 /* <!-- ---------------Projects------------------ --> */
-#Projects {
+#projects {
   padding: 70px 0;
 }
 
@@ -363,6 +363,8 @@ nav ul li a:hover::after {
   color: white;
   margin: 10px 0;
   font-weight: bold;
+  display: inline-block;
+  border: none;
 }
 .btn:hover {
   cursor: pointer;
@@ -579,7 +581,6 @@ nav .fas {
   .header-text {
     font-size: 26px;
     margin-top: 100%;
-    border: 2px solid yellow;
   }
   .header-text h1 {
     font-size: 30px;
