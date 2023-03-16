@@ -484,9 +484,6 @@ nav .fas {
   }
 }
 @media screen and (max-width: 830px) {
-  #header {
-    background-image: url("../images/smallscreenpic2.png");
-  }
   .header-text {
     font-size: 16px;
     margin-top: 65%;
@@ -522,20 +519,20 @@ nav .fas {
   .about-col-2 {
     flex-basis: 100%;
   }
-  #About {
-    padding: 10px 0;
+  #about {
+    padding: 30px 0;
   }
   #services {
-    padding: 10px 0px;
+    padding: 30px 0px;
   }
-  #Skills {
-    padding: 10px 0px;
+  #skills {
+    padding: 30px 0px;
   }
   #tools {
-    padding: 20px 0px;
+    padding: 30px 0px;
   }
-  #Projects {
-    padding: 20px 0px;
+  #projects {
+    padding: 30px 0px;
   }
   .contact-left,
   .contact-right {
@@ -575,15 +572,17 @@ nav .fas {
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) { 
-  #header{
-    width: max-content;
+@media only screen and (max-width: 600px) { 
+  #header {
+    background-image: url("../images/phone.png");
   }
   .header-text {
     font-size: 26px;
+    margin-top: 100%;
+    border: 2px solid yellow;
   }
   .header-text h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   nav .fas {
     display: block;
@@ -612,19 +611,19 @@ nav .fas {
   .sub-title {
     font-size: 40px;
   }
-  #About {
+  #about {
     padding: 30px 0;
   }
   #services {
     padding: 30px 0px;
   }
-  #Skills {
+  #skills {
     padding: 30px 0px;
   }
   #tools {
     padding: 30px 0px;
   }
-  #Projects {
+  #projects {
     padding: 30px 0px;
   }
   .about-col-1,
@@ -646,11 +645,8 @@ nav .fas {
   .contact-right {
     flex-basis: 100%;
   }
-  .container {
-    width: 610px;
-  }
   .copyright {
-    width: 610px;
+    width: 100%;
   }
   .js-calendar-graph {
     display: none;
@@ -664,13 +660,18 @@ nav .fas {
     overflow: hidden;
   }
 }
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   #ddd {
-    font-size: 30px;
+    font-size: 25px;
   }
   .header-text {
-    margin-top: 70%;
+    margin-top: 150%;
+    font-size: 20px;
   }
+  .header-text h1 {
+    font-size: 30px;
+  }
+
 }
 @media screen and (max-width: 415px) {
   .contact-left,
@@ -678,14 +679,14 @@ nav .fas {
     flex-basis: 100%;
   }
   .logo {
-    width: 180px;
+    width: 200px;
   }
   .services-list {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
   .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
     width: 100%;
