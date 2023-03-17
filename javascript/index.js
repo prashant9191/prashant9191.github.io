@@ -41,6 +41,7 @@ function opentab(tabname){
 
 
 
+
 var typed = new Typed(".typing-text", {
   strings: ["Back-End Development", "Front-End Development","Database Management","API Development"],
   loop: true,
@@ -49,3 +50,8 @@ var typed = new Typed(".typing-text", {
   backDelay: 500,
 });
 
+const logoimg=document.querySelector(".logo");
+logoimg.addEventListener("click",()=>{
+  
+  window.scrollTo(0, 0);
+})

@@ -187,6 +187,7 @@ nav ul li a:hover::after {
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
+  color: #26c9b9;
 }
 .services-list div h2 {
   font-size: 30px;
@@ -281,12 +282,12 @@ nav ul li a:hover::after {
   margin-bottom: 10px;
 }
 .project-list > div:hover {
-  background: #ff004f;
+  background: #263238;
   transform: scale3d(1.03, 1.03, 1.03);
 }
 .project-list div h1 {
   text-align: center;
-  color: #0098e4;
+  color: #ff004f;
   margin: 10px;
 }
 .project-list div p {
@@ -295,7 +296,8 @@ nav ul li a:hover::after {
 }
 
 .project-list div p span {
-  color: #26c9b9;
+  font-weight: bold;
+  color: #ff004f;
   font-size: 18px;
 }
 .key-features {
@@ -312,11 +314,11 @@ nav ul li a:hover::after {
   align-items: center;
 }
 .projectlinks a {
-  background-color: #ababab;
+  background-color: #1E88E5;
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
-  color: #127fb6;
+  color:whitesmoke;
   margin: 10px 0;
   font-weight: bolder;
 }
@@ -613,19 +615,19 @@ nav .fas {
     font-size: 40px;
   }
   #about {
-    padding: 30px 0;
+    padding: 40px 0;
   }
   #services {
-    padding: 30px 0px;
+    padding: 40px 0px;
   }
   #skills {
-    padding: 30px 0px;
+    padding: 40px 0px;
   }
   #tools {
-    padding: 30px 0px;
+    padding: 40px 0px;
   }
   #projects {
-    padding: 30px 0px;
+    padding: 40px 0px;
   }
   .about-col-1,
   .about-col-2 {
@@ -666,7 +668,7 @@ nav .fas {
     font-size: 25px;
   }
   .header-text {
-    margin-top: 130%;
+    margin-top: 125%;
     font-size: 20px;
   }
   .header-text h1 {
