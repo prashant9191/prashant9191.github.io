@@ -40,11 +40,15 @@ nav.scrolled {
   background-color: black;
 }
 #running-text {
-  margin-bottom: 50px;
+  margin-bottom:20px;
 }
 
 .logo {
   width: 100px;
+}
+.logo:hover{
+  transform: scale3d(1.04,1.04,1.04);
+  cursor: pointer;
 }
 nav ul li {
   display: inline-block;
@@ -164,7 +168,9 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
-
+#user-detail-intro{
+  font-size: 16px;
+}
 /* <!-- ---------------services------------------ --> */
 
 #services {
@@ -543,7 +549,6 @@ nav .fas {
     flex-basis: 100%;
   }
   .sub-title {
-    margin-top: 30px;
     margin-bottom: 20px;
   }
   .logo {
@@ -699,5 +704,22 @@ nav .fas {
   }
   #ddd {
     font-size: 30px;
+  }
+}
+
+/* ---------css for glowing effect------------- */
+.glow {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #C62828, 0 0 70px #C62828, 0 0 80px #C62828, 0 0 100px #C62828;
+  animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #C62828, 0 0 70px #C62828, 0 0 80px #C62828, 0 0 100px #C62828;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #C62828, 0 0 70px #C62828, 0 0 80px #C62828, 0 0 100px #C62828;
   }
 }
