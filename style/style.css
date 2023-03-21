@@ -77,6 +77,7 @@ nav ul li a:hover::after {
 .header-text {
   margin-top: 20%;
   font-size: 30px;
+  font-weight: bolder;
 }
 .typing-text {
   color: #ff004f;
@@ -400,7 +401,7 @@ form textarea {
 .copyright {
   width: 100%;
   text-align: center;
-  padding: 25px 0;
+  padding:15px 0;
   font-weight: bold;
   margin-top: 20px;
   background: #262626;
@@ -619,20 +620,17 @@ nav .fas {
   .sub-title {
     font-size: 40px;
   }
-  #about {
-    padding: 40px 0;
-  }
   #services {
-    padding: 40px 0px;
+    padding: 80px 0px;
   }
   #skills {
-    padding: 40px 0px;
+    padding: 80px 0px;
   }
   #tools {
-    padding: 40px 0px;
+    padding: 80px 0px;
   }
   #projects {
-    padding: 40px 0px;
+    padding: 80px 0px;
   }
   .about-col-1,
   .about-col-2 {
@@ -722,4 +720,12 @@ nav .fas {
   100% {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #C62828, 0 0 70px #C62828, 0 0 80px #C62828, 0 0 100px #C62828;
   }
+}
+#resume-button-1,#resume-button-2{
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  background: none;
+  border: none;
 }
