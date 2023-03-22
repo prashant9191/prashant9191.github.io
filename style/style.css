@@ -44,7 +44,7 @@ nav.scrolled {
 }
 
 .logo {
-  width: 100px;
+  width: 200px;
 }
 .logo:hover{
   transform: scale3d(1.04,1.04,1.04);
@@ -474,6 +474,31 @@ nav .fas {
 .contrib-column {
   padding: 10px;
 }
+#scrollbtn button{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 30px;
+  right: 40px;
+  background:none;
+  border: none;
+  padding: 10px;
+}
+#scrollbtn button i{
+  position: relative;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  color:#ff004f; 
+}
+#scrlbtn{
+  display: none;
+}
+#scrollbtn button i:hover{
+color:#fdc417;
+cursor: pointer;
+}
+
 
 @media screen and (max-width: 1060px) {
   .js-calendar-graph {
@@ -487,6 +512,9 @@ nav .fas {
   .header-text {
     margin-top: 50%;
     font-size: 26px;
+  }
+  .logo{
+    width: 100px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -664,6 +692,10 @@ nav .fas {
     margin: 30px 0px;
     height: 150px;
     overflow: hidden;
+  }
+  #scrollbtn button{
+    bottom: 25px;
+    right: 15px;
   }
 }
 @media only screen and (max-width: 420px) {

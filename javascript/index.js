@@ -1,10 +1,17 @@
 // <!-- -------------nav---------------- -->
 const nav = document.querySelector('nav');
+const scrolbtn = document.getElementById('scrlbtn');
 window.addEventListener('scroll', () => {
+  
   if (window.pageYOffset >= 100) {
     nav.classList.add('scrolled');
   } else {
     nav.classList.remove('scrolled');
+  }
+  if(window.pageYOffset >= 800){
+    scrolbtn.style.display="block"
+  }else{
+    scrolbtn.style.display="none"
   }
 });
 
@@ -53,5 +60,8 @@ var typed = new Typed(".typing-text", {
 const logoimg=document.querySelector(".logo");
 logoimg.addEventListener("click",()=>{
   
+  window.scrollTo(0, 0);
+})
+scrolbtn.addEventListener("click",()=>{
   window.scrollTo(0, 0);
 })
