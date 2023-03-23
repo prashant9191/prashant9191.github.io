@@ -11,7 +11,17 @@ body {
   background: #080808;
   color: #fff;
 }
-
+body.dark-mode {
+  color: rgb(10, 9, 9);
+  background: rgb(244, 244, 244);
+}
+/* .lightm h1{
+  color:#DD2C00;
+  
+}
+.lightm h2, .lightm p,.lightm li{
+  color: black;
+} */
 /* <!-- -------------header and nav bar---------------- --> */
 #header {
   width: 100%;
@@ -99,6 +109,20 @@ nav ul li a:hover::after {
 #d_text {
   color: #43a047;
 }
+#sun{
+  display: inline-block;
+  z-index: 120;
+  font-size:20px;
+  display: none;
+  color: white;
+}
+#moon{
+  display: inline-block;
+  font-size:20px;
+  z-index: 120;
+  display: none;
+  color: rgb(249, 245, 245);
+}
 /* ---------------------------------about----------------------------- */
 #about {
   color: #ababab;
@@ -106,7 +130,6 @@ nav ul li a:hover::after {
 .row {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-wrap: wrap;
 }
 .about-col-1 {
@@ -414,7 +437,6 @@ form textarea {
 nav .fas {
   display: none;
 }
-
 #msg {
   color: #61b752;
   margin-top: 10px;
@@ -449,7 +471,7 @@ nav .fas {
 #calender_cont {
   padding: 10 10%;
   width: 100%;
-  background: linear-gradient(to right, #030962, transparent);
+  background: linear-gradient(to left, #01053c, transparent), linear-gradient(to right, #01053c, transparent);
   margin: 30px 0px;
 }
 .text-muted,
@@ -487,7 +509,6 @@ nav .fas {
 #scrollbtn button i{
   position: relative;
   font-size: 25px;
-  color: white;
   font-weight: bold;
   color:#ff004f; 
 }
@@ -524,7 +545,7 @@ cursor: pointer;
     left: -70px;
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 858px) {
   .header-text {
     font-size: 16px;
     margin-top: 65%;

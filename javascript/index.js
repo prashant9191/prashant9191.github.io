@@ -65,3 +65,21 @@ logoimg.addEventListener("click",()=>{
 scrolbtn.addEventListener("click",()=>{
   window.scrollTo(0, 0);
 })
+
+
+// //code for light and darkmode
+let lighMbtn=document.getElementById("sun");
+let darkmode=document.getElementById("moon");
+const body = document.querySelector('body');
+lighMbtn.addEventListener("click", () => {
+  console.log("I'm clicked");
+  body.classList.toggle('dark-mode');
+  lighMbtn.style.display="none";
+  darkmode.style.display="inline-block";
+});
+darkmode.addEventListener("click", () => {
+  console.log("I'm clicked");
+  body.classList.toggle('dark-mode');
+  darkmode.style.display="none";
+  lighMbtn.style.display="inline-block";
+});
